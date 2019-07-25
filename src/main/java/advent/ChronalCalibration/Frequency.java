@@ -1,4 +1,4 @@
-package advent;
+package advent.ChronalCalibration;
 
 public class Frequency {
 
@@ -10,5 +10,9 @@ public class Frequency {
 
     public int getCurrent() {
         return current;
+    }
+
+    public void changeBy(int value) {
+        current += value;
     }
 }

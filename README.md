@@ -5,8 +5,6 @@
 Short notes about initial design/thoughts about how to solve the riddle, followed by things I might have tried and the 
 final weapon of choice to finish a riddle off.
 
-![](header.png)
-
 ## Installation
 It's a java gradle project, so gradle it! ;) or ask if you need any help.
 
@@ -21,8 +19,10 @@ First idea: HashMap with the counts
 Then: decided to solve algorithmically by sorting the String
 
 ##### Part 2
-First ideas: create class with a list of stacks plus differs by one and differs by two flags.  
-Pop chars and build string when differs by two 
+FIRST IDEAS: Some kind of tree structure? / Levenshtein algorithm   
+
+THEN: decided to try out the runtime first with a mild brute force approach first  
+RESULT: O(N) runs in a few milliseconds on the 250 entities input.
 
 ## Meta
 Your Name – [@YourTwitter](https://twitter.com/gocloudgreen)

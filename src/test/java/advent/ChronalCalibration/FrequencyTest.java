@@ -1,4 +1,4 @@
-package advent;
+package advent.ChronalCalibration;
 
 import advent.ChronalCalibration.Frequency;
 import org.junit.Test;

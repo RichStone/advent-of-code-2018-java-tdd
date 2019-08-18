@@ -1,6 +1,5 @@
 package advent.InventoryManagementSystemTest;
 
-import advent.InventoryManagementSystem.EqualCharCounter;
 import advent.InventoryManagementSystem.SystemRunner;
 import static org.junit.Assert.*;
 import org.junit.Test;

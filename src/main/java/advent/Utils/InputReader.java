@@ -20,8 +20,37 @@ public class InputReader {
         return new File(url.getFile());
     }
 
-    public Scanner getScanner() throws FileNotFoundException {
-        File file = getFile();
-        return new Scanner(file);
+    public Scanner getScanner() {
+        try {
+            File file = getFile();
+            return new Scanner(file);
+        } catch (FileNotFoundException e) {
+            System.out.println("No such file");
+        }
+        return null;
+    }
+
+    public String [] getStringArray() {
+        Scanner inputs = getScanner();
+        int arraySize = getScannerLineCount(inputs);
+        String [] strings = new String[arraySize];
+
+        // reinitialize inputs after the scanner object was exhausted in the counting operation
+        inputs = getScanner();
+        for (int i = 0; i < arraySize; i++) {
+            String s = inputs.next();
+            strings[i] = s;
+        }
+
+        return strings;
+    }
+
+    private int getScannerLineCount(Scanner scanner) {
+        int count = 0;
+        while (scanner.hasNext()) {
+            count++;
+            scanner.next();
+        }
+        return count;
     }
 }

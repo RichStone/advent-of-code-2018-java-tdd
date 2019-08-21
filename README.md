@@ -23,6 +23,3 @@ FIRST IDEAS: Some kind of tree structure? / Levenshtein algorithm
 
 THEN: decided to try out the runtime first with a mild brute force approach first  
 RESULT: O(N) runs in a few milliseconds on the 250 entities input.
-
-## Meta
-Your Name – [@YourTwitter](https://twitter.com/gocloudgreen)

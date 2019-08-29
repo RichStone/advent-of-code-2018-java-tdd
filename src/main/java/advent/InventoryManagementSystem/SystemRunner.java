@@ -1,10 +1,7 @@
 package advent.InventoryManagementSystem;
 
 import advent.Utils.InputReader;
-import com.sun.tools.jdeprscan.scan.Scan;
 
-import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.util.List;
 import java.util.Scanner;
 
@@ -22,7 +19,7 @@ public class SystemRunner {
         System.out.println("Part 1 checksum: " + checksum);
 
         // part 2
-        String [] inputStringsArr = inputReader.getStringArray();
+        String [] inputStringsArr = inputReader.getStringTokenArray();
         List<String> similars = SimilarityDetector.getSimilarsByOneCharLocallySensitive(inputStringsArr);
         String commonChars = SimilarityDetector.getCommonChars(similars.get(0), similars.get(1));
         System.out.println(commonChars);

@@ -3,6 +3,7 @@ package advent.Utils;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class InputReader {
@@ -30,7 +31,7 @@ public class InputReader {
         return null;
     }
 
-    public String [] getStringArray() {
+    public String [] getStringTokenArray() {
         Scanner inputs = getScanner();
         int arraySize = getScannerLineCount(inputs);
         String [] strings = new String[arraySize];
@@ -43,6 +44,15 @@ public class InputReader {
         }
 
         return strings;
+    }
+
+    public ArrayList<String> getStringLinesArrayList() {
+        Scanner rawInputs = getScanner();
+        ArrayList<String> inputs = new ArrayList<>();
+        while (rawInputs.hasNext()) {
+            inputs.add(rawInputs.nextLine());
+        }
+        return inputs;
     }
 
     private int getScannerLineCount(Scanner scanner) {

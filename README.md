@@ -24,5 +24,14 @@ FIRST IDEAS: Some kind of tree structure? / Levenshtein algorithm
 THEN: decided to try out the runtime first with a mild brute force approach first  
 RESULT: O(N) runs in a few milliseconds on the 250 entities input.
 
+## Day 3
+### Part 1
+**1st Idea**
+Use a variable size 2D array with ints to represent the field being 0 - empty, 
+1 - used once, 2 - used twice, etc.
+**2nd Idea**
+We don't care about the actual field only about the intersections between ... integer arrays? 
+-> Try with HashMap of field combo strings to integer.
+
 ## Meta
-Your Name – [@YourTwitter](https://twitter.com/gocloudgreen)
+Richard – [@YourTwitter](https://twitter.com/gocloudgreen)
